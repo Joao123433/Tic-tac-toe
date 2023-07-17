@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: black;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.placarPontos {
+    width: 100vw;
+    height: 25%;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.placarPontos p {
+    font-size: 1.5rem;
+}
+
+.placarPontos .simbolo {
+    display: block;
+    text-align: center;
+    margin: 10px;
+}
+
+.jogoVelha {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: .8rem;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.jogoVelha button {
+    width: 150px;
+    height: 150px;
+    font-size: 9em;
+    padding: 0px 6px 0px 20px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.selecionado {
+    color: red;
+} 
+
+.win {
+    background-color: rgb(0, 214, 0);
+    border: 0;
+}
+
+.finalJogo {
+    position: absolute;
+    top: 60%;
+    right: 40%;
+}
+
+.finalJogo button {
+    padding: 20px;
+}
+
+.blur {
+    filter: blur(5px);
+}
+
+.none {
+    display: none;
+}
+
+.empate {
+    background-color: red;
+    border: 0;
+}
